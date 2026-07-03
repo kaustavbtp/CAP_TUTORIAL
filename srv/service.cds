@@ -1,9 +1,9 @@
-using { tutorial.db } from '../db/schema';
+using {tutorial.db} from '../db/schema';
 
 service BookstoreService {
-    entity Books as projection on db.Books;
-    entity Authors as projection on db.Authors;
-    entity Chapters as projection on db.Chapters;
+    entity Books      as projection on db.Books;
+    entity Authors    as projection on db.Authors;
+    entity Chapters   as projection on db.Chapters;
+    entity Bookstatus as projection on db.Bookstatus;
 //    entity Authors2Book as projection on db.Authors2Book;
 }
-
